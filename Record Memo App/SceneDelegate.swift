@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Record Memo App
-//
-//  Created by kazukimorikami on 2022/06/19.
-//
 
 import UIKit
 
