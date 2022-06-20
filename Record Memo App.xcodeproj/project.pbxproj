@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36EDA7C31BE88E78F7CD7E22 /* Pods_Record_Memo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518222BBCF191FBB2AE00B1A /* Pods_Record_Memo_App.framework */; };
+		E52B0E3A285F179F007E6451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0E39285F179F007E6451 /* AppDelegate.swift */; };
+		E52B0E3C285F179F007E6451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0E3B285F179F007E6451 /* SceneDelegate.swift */; };
+		E52B0E3E285F179F007E6451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0E3D285F179F007E6451 /* ViewController.swift */; };
+		E52B0E41285F179F007E6451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52B0E3F285F179F007E6451 /* Main.storyboard */; };
+		E52B0E43285F17A6007E6451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52B0E42285F17A6007E6451 /* Assets.xcassets */; };
+		E52B0E46285F17A6007E6451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52B0E44285F17A6007E6451 /* LaunchScreen.storyboard */; };
+		E52B0E4E285F1A67007E6451 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0E4D285F1A67007E6451 /* Data.swift */; };
+		E52B0E50285F1ABD007E6451 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0E4F285F1ABD007E6451 /* RecordViewController.swift */; };
+		E52B0E52285F1BEC007E6451 /* MemoAndPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0E51285F1BEC007E6451 /* MemoAndPlayViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		518222BBCF191FBB2AE00B1A /* Pods_Record_Memo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Record_Memo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C6D2F18E707E03A202DEDE /* Pods-Record Memo App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Record Memo App.debug.xcconfig"; path = "Target Support Files/Pods-Record Memo App/Pods-Record Memo App.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7145C93901BD3A30699790 /* Pods-Record Memo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Record Memo App.release.xcconfig"; path = "Target Support Files/Pods-Record Memo App/Pods-Record Memo App.release.xcconfig"; sourceTree = "<group>"; };
+		E52B0E36285F179F007E6451 /* Record Memo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Record Memo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52B0E39285F179F007E6451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E52B0E3B285F179F007E6451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E52B0E3D285F179F007E6451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E52B0E40285F179F007E6451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E52B0E42285F17A6007E6451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E52B0E45285F17A6007E6451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E52B0E47285F17A6007E6451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52B0E4D285F1A67007E6451 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E52B0E4F285F1ABD007E6451 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		E52B0E51285F1BEC007E6451 /* MemoAndPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAndPlayViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E52B0E33285F179F007E6451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EDA7C31BE88E78F7CD7E22 /* Pods_Record_Memo_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3168D999152D5AA929555C8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93C6D2F18E707E03A202DEDE /* Pods-Record Memo App.debug.xcconfig */,
+				BE7145C93901BD3A30699790 /* Pods-Record Memo App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6446A2375D7E7E636FA073E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				518222BBCF191FBB2AE00B1A /* Pods_Record_Memo_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E52B0E2D285F179E007E6451 = {
+			isa = PBXGroup;
+			children = (
+				E52B0E38285F179F007E6451 /* Record Memo App */,
+				E52B0E37285F179F007E6451 /* Products */,
+				3168D999152D5AA929555C8C /* Pods */,
+				6446A2375D7E7E636FA073E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E52B0E37285F179F007E6451 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E52B0E36285F179F007E6451 /* Record Memo App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52B0E38285F179F007E6451 /* Record Memo App */ = {
+			isa = PBXGroup;
+			children = (
+				E52B0E39285F179F007E6451 /* AppDelegate.swift */,
+				E52B0E3B285F179F007E6451 /* SceneDelegate.swift */,
+				E52B0E4D285F1A67007E6451 /* Data.swift */,
+				E52B0E51285F1BEC007E6451 /* MemoAndPlayViewController.swift */,
+				E52B0E4F285F1ABD007E6451 /* RecordViewController.swift */,
+				E52B0E3D285F179F007E6451 /* ViewController.swift */,
+				E52B0E3F285F179F007E6451 /* Main.storyboard */,
+				E52B0E42285F17A6007E6451 /* Assets.xcassets */,
+				E52B0E44285F17A6007E6451 /* LaunchScreen.storyboard */,
+				E52B0E47285F17A6007E6451 /* Info.plist */,
+			);
+			path = "Record Memo App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E52B0E35285F179F007E6451 /* Record Memo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52B0E4A285F17A6007E6451 /* Build configuration list for PBXNativeTarget "Record Memo App" */;
+			buildPhases = (
+				6B7B98E7DC14FF9439354856 /* [CP] Check Pods Manifest.lock */,
+				E52B0E32285F179F007E6451 /* Sources */,
+				E52B0E33285F179F007E6451 /* Frameworks */,
+				E52B0E34285F179F007E6451 /* Resources */,
+				1E18374A29410FF327896FDE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Record Memo App";
+			productName = "Record Memo App";
+			productReference = E52B0E36285F179F007E6451 /* Record Memo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E52B0E2E285F179E007E6451 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E52B0E35285F179F007E6451 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E52B0E31285F179E007E6451 /* Build configuration list for PBXProject "Record Memo App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E52B0E2D285F179E007E6451;
+			productRefGroup = E52B0E37285F179F007E6451 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E52B0E35285F179F007E6451 /* Record Memo App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E52B0E34285F179F007E6451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52B0E46285F17A6007E6451 /* LaunchScreen.storyboard in Resources */,
+				E52B0E43285F17A6007E6451 /* Assets.xcassets in Resources */,
+				E52B0E41285F179F007E6451 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E18374A29410FF327896FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Record Memo App/Pods-Record Memo App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Record Memo App/Pods-Record Memo App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Record Memo App/Pods-Record Memo App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7B98E7DC14FF9439354856 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Record Memo App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E52B0E32285F179F007E6451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52B0E52285F1BEC007E6451 /* MemoAndPlayViewController.swift in Sources */,
+				E52B0E3E285F179F007E6451 /* ViewController.swift in Sources */,
+				E52B0E3A285F179F007E6451 /* AppDelegate.swift in Sources */,
+				E52B0E50285F1ABD007E6451 /* RecordViewController.swift in Sources */,
+				E52B0E3C285F179F007E6451 /* SceneDelegate.swift in Sources */,
+				E52B0E4E285F1A67007E6451 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E52B0E3F285F179F007E6451 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52B0E40285F179F007E6451 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E52B0E44285F17A6007E6451 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52B0E45285F17A6007E6451 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E52B0E48285F17A6007E6451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E52B0E49285F17A6007E6451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E52B0E4B285F17A6007E6451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C6D2F18E707E03A202DEDE /* Pods-Record Memo App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Record Memo App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.Record-Memo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E52B0E4C285F17A6007E6451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7145C93901BD3A30699790 /* Pods-Record Memo App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Record Memo App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.Record-Memo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E52B0E31285F179E007E6451 /* Build configuration list for PBXProject "Record Memo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52B0E48285F17A6007E6451 /* Debug */,
+				E52B0E49285F17A6007E6451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52B0E4A285F17A6007E6451 /* Build configuration list for PBXNativeTarget "Record Memo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52B0E4B285F17A6007E6451 /* Debug */,
+				E52B0E4C285F17A6007E6451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E52B0E2E285F179E007E6451 /* Project object */;
+}
