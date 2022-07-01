@@ -29,6 +29,7 @@ class RecordViewController: UIViewController {
         let realm = try! Realm()
         dataItems = realm.objects(Data.self)
         setRecorder()
+        self.navigationItem.hidesBackButton = true
     }
     
     func setRecorder(){
