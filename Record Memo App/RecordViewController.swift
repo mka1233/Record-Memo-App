@@ -6,8 +6,10 @@ import AVFoundation
 class RecordViewController: UIViewController {
     var audioRecorder : AVAudioRecorder!
     var dataItems: Results<Data>!
+    var myTimer: Timer!
     var urlNum : URL?
     var num = 0
+    @IBOutlet weak var RecordTimer: UILabel!
     
     @IBAction func stopButton(_ sender: UIButton) {
         audioRecorder.stop()
@@ -18,6 +20,7 @@ class RecordViewController: UIViewController {
         try! realm.write {
             realm.add(data)
         }
+        myTimer.invalidate()
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -42,6 +45,14 @@ class RecordViewController: UIViewController {
         urlNum = getURL()
         audioRecorder = try! AVAudioRecorder(url: urlNum!, settings: settings)
         audioRecorder.record()
+        myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+    }
+    
+    @objc func update(){
+        let time = audioRecorder.currentTime
+        let min = Int(time / 60)
+        let sec = String(format: "%02d",Int(time) % 60)
+        RecordTimer.text = "\(min):\(sec)"
     }
 
     func getURL() -> URL{
