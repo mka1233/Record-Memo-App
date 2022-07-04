@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         dataItems = realm.objects(Data.self)
 
         table.reloadData()
-
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,8 +48,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func RecordButton(_ sender: UIBarButtonItem) {
         let nextView2 = self.storyboard?.instantiateViewController(withIdentifier: "Next2") as! RecordViewController
-        num += 1
-        nextView2.num = num
+        let dt = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
+        nextView2.dt = dateFormatter.string(from: dt)
+        print(dateFormatter.string(from: dt))
         self.navigationController?.pushViewController(nextView2, animated: true)
     }
     

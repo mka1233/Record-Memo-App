@@ -8,14 +8,14 @@ class RecordViewController: UIViewController {
     var dataItems: Results<Data>!
     var myTimer: Timer!
     var urlNum : URL?
-    var num = 0
+    var dt = ""
     @IBOutlet weak var RecordTimer: UILabel!
     
     @IBAction func stopButton(_ sender: UIButton) {
         audioRecorder.stop()
         let realm = try! Realm()
         let data = Data()
-        data.title = String(num)
+        data.title = String(dt)
         data.url = urlNum?.absoluteString ?? ""
         try! realm.write {
             realm.add(data)
@@ -59,7 +59,7 @@ class RecordViewController: UIViewController {
     func getURL() -> URL{
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
-        let url = docsDirect.appendingPathComponent("recording\(num).m4a")
+        let url = docsDirect.appendingPathComponent("recording\(dt).m4a")
         return url
     }
     }
