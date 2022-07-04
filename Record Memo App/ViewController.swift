@@ -34,14 +34,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let object = dataItems[indexPath.row]
+        let object = dataItems[dataItems.count - indexPath.row - 1]
         cell.textLabel?.text = object.title
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextView = self.storyboard?.instantiateViewController(withIdentifier: "Next") as! MemoAndPlayViewController
-        nextView.indexPathOfRow = indexPath.row
+        nextView.indexPathOfRow = dataItems.count - indexPath.row - 1
         self.navigationController?.pushViewController(nextView, animated: true)
     }
     
@@ -60,7 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            deleteCell(at:indexPath.row)
+            deleteCell(at: dataItems.count - indexPath.row - 1)
             table.reloadData()
         }
     }
