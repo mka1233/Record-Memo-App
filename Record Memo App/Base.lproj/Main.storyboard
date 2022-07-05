@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-Z4-Mq3">
-                                <rect key="frame" x="158" y="307" width="96" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-Z4-Mq3">
+                                <rect key="frame" x="170.5" y="307" width="73.5" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted">
                                     <attributedString key="attributedTitle">
@@ -33,9 +32,8 @@
                                     <action selector="stopButton:" destination="hdB-9N-Zyv" eventType="touchUpInside" id="YR9-eX-MDh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-40-zNk">
-                                <rect key="frame" x="172" y="211" width="69" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-40-zNk">
+                                <rect key="frame" x="175.5" y="211" width="63" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,6 +41,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rqU-fS-CtL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xpu-40-zNk" firstAttribute="top" secondItem="rqU-fS-CtL" secondAttribute="top" constant="167" id="79b-jj-CMU"/>
+                            <constraint firstItem="gEC-Z4-Mq3" firstAttribute="top" secondItem="xpu-40-zNk" secondAttribute="bottom" constant="60" id="LHL-I7-gKR"/>
+                            <constraint firstItem="gEC-Z4-Mq3" firstAttribute="centerX" secondItem="9S8-2U-IIH" secondAttribute="centerX" id="l9w-uK-kCJ"/>
+                            <constraint firstItem="xpu-40-zNk" firstAttribute="centerX" secondItem="9S8-2U-IIH" secondAttribute="centerX" id="oxv-Wg-CCD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="RecordTimer" destination="xpu-40-zNk" id="hIR-lU-j7t"/>
