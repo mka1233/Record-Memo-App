@@ -52,7 +52,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         nextView2.dt = dateFormatter.string(from: dt)
-        print(dateFormatter.string(from: dt))
         self.navigationController?.pushViewController(nextView2, animated: true)
     }
     
