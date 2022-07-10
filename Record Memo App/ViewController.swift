@@ -59,6 +59,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let object = dataItems[dataItems.count - indexPath.row - 1]
+            let removeUrl = URL(string: object.url)!
+            try! FileManager.default.removeItem(at: removeUrl)
             deleteCell(at: dataItems.count - indexPath.row - 1)
             table.reloadData()
         }
