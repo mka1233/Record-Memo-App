@@ -30,6 +30,7 @@ class MemoAndPlayViewController: UIViewController,AVAudioPlayerDelegate{
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if flag{
             audioButton.setTitle("▶️", for: .normal)
+            seakVar.value = 0.0
         }
     }
     

@@ -34,7 +34,9 @@ class RecordViewController: UIViewController {
     
     func setRecorder(){
         let session = AVAudioSession.sharedInstance()
-        try! session.setCategory(.playAndRecord, mode: .default)
+        try! session.setCategory(.playAndRecord, options: [.defaultToSpeaker,
+                                                           .allowAirPlay,
+                                                           .allowBluetoothA2DP])
         try! session.setActive(true)
         
         let settings = [
