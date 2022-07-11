@@ -73,7 +73,7 @@ class MemoAndPlayViewController: UIViewController,AVAudioPlayerDelegate{
         
         audioPlayer = try! AVAudioPlayer(contentsOf: url!)
         audioPlayer.delegate = self
-        audioPlayer.volume = 10.0
+        audioPlayer.volume = 1.0
         audioPlayer.pan = 0.0
         audioPlayer.enableRate = true
         audioPlayer.play()
