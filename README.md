@@ -27,14 +27,13 @@
 - 使い方に困ることのないようにシンプルな設計を心がけた。
 - 再生位置・速度を簡単に変えられるようにスライダーを用いた。
 - 音が二重に鳴らないようにした。
+- 最新のデータがリストの最上位に来るようにした
 
 ## 苦労した点
 - tableviewメソッド  numberOfRowsInSection,cellForRowAtがいつ呼ばれるのか。(reloadData()された後にセルの個数分描画される。)
 - UITableViewDelegateの意味と使い方。(didSelectRowAtを使うのに必要だった。)
 - 想定した通りに音を鳴らすにはAVAudioPlayerをどの時点でセットして止めれば良いか。(再生画面へ遷移時にセット)
 
-## 改善点
-- AutoLayout設定を行う。
 
 ## 開発環境
 - OS：macOS Monterey version 12.4
