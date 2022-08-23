@@ -9,6 +9,7 @@ class MemoAndPlayViewController: UIViewController,AVAudioPlayerDelegate{
     var myTimer: Timer!
     var indexPathOfRow = 0
     var audioPlayer : AVAudioPlayer!
+    var shareButtonItem : UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var timer: UILabel!
@@ -61,6 +62,8 @@ class MemoAndPlayViewController: UIViewController,AVAudioPlayerDelegate{
         setting()
         seakVar.maximumValue = Float(audioPlayer.duration)
         myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateSlider), userInfo: nil, repeats: true)
+        shareButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(actionButtonPressed(_:)))
+        self.navigationItem.rightBarButtonItem = shareButtonItem
     }
     
     func setting(){
@@ -104,6 +107,16 @@ class MemoAndPlayViewController: UIViewController,AVAudioPlayerDelegate{
             memo.title = titleText.text!
         }
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func actionButtonPressed(_ sender: UIBarButtonItem) {
+        let realm = try! Realm()
+        dataItems = realm.objects(Data.self)
+        let memo = dataItems[indexPathOfRow]
+        let url = URL(string: memo.url)
+        let items = [url!] 
+        let activityVc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        self.present(activityVc, animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

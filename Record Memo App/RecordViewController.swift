@@ -61,7 +61,7 @@ class RecordViewController: UIViewController {
     func getURL() -> URL{
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
-        let url = docsDirect.appendingPathComponent("recording\(dt).m4a")
+        let url = docsDirect.appendingPathComponent("recording \(dt).m4a")
         return url
     }
     }
