@@ -1,6 +1,7 @@
 
 import UIKit
 import RealmSwift
+import AVFoundation
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -52,7 +53,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         nextView2.dt = dateFormatter.string(from: dt)
-        self.navigationController?.pushViewController(nextView2, animated: true)
+        
+        let status = AVCaptureDevice.authorizationStatus(for: .audio)
+        if status == AVAuthorizationStatus.notDetermined {
+            AVCaptureDevice.requestAccess(for: .audio) { granted in
+                if granted {
+                    DispatchQueue.main.async {
+                        self.navigationController?.pushViewController(nextView2, animated: true)
+                    }
+                }
+            }
+        } else if status == AVAuthorizationStatus.authorized {
+            self.navigationController?.pushViewController(nextView2, animated: true)
+        } else {
+            
+        }
     }
     
 
